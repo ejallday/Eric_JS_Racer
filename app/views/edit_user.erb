@@ -1,0 +1,12 @@
+<div class="blanket">
+	<div class="sign_up_container">
+		<h2><%= current_user.name %></h2>
+
+		<form class="sign_up" action="/user/update" method="post">
+			<input type="text" name="user[name]" placeholder="name" value="<%=current_user.name%>"><br>
+			<input type="text" name="user[email]" placeholder="email"value="<%=current_user.email%>"><br>
+			<input type="password" name="user[password]" placeholder="password"><br>
+			<input class="button" type="submit" value="update info">
+		</form>
+	</div>
+</div>

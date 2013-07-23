@@ -1,0 +1,12 @@
+<div class="container">
+<% if @error %>
+  <%= @error %>
+<% else %>
+<h1><%=current_user.name%></h1>
+<img src="http://www.maxdenver.com/maxdenver/images/100807/tebow_hair_425.jpg" alt="">
+<ul>
+<li><a href="/user/edit/<%= current_user.id %>">Edit Profile</a> </li>
+</ul>
+<% end %>
+</div>
+
